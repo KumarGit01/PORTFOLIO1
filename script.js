@@ -1,3 +1,22 @@
+
+function slideout(){
+  const x = document.querySelectorAll('.slider1')[0]
+  const y = document.querySelectorAll('.slider')[0]
+  const z = document.querySelectorAll('cir')
+
+  x.classList.toggle('slideani')
+  y.classList.toggle('slideani1')
+
+
+}
+
+
+
+
+
+
+
+
 /* ----- NAVIGATION BAR FUNCTION ----- */
 function myMenuFunction(){
     let menuBtn = document.getElementById("myNavMenu");
@@ -33,7 +52,7 @@ function myMenuFunction(){
 
 /* ----- TYPING EFFECT ----- */
  let typingEffect = new Typed(".typedText",{
-    strings : ["Designer","Youtuber","Developer"],
+    strings : ["Designer","Youtuber","Developer","GAMER"],
     loop : true,
     typeSpeed : 100, 
     backSpeed : 80,
@@ -101,6 +120,8 @@ function scrollActive() {
     const sectionHeight = current.offsetHeight,
         sectionTop = current.offsetTop - 50,
       sectionId = current.getAttribute('id')
+
+
 
     if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) { 
 
