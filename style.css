@@ -1215,18 +1215,18 @@ footer{
     }
     form{
         position: relative;
-       width: 350px;
+       width: 300px;
         border: 2px solid rgba(255, 0, 0, 0);
        
     }
     .form-inputs{
         display: flex;
         gap: 10px;
-        width: 80%;
+        width: 50%;
     }
    
     textarea{
-        width: 80%;
+        width: 50%;
         height: 250px;
         background: transparent;
         border: 2px solid #AAA;
