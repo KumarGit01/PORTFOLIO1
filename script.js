@@ -3,16 +3,11 @@ function slideout(){
   const x = document.querySelectorAll('.slider1')[0]
   const y = document.querySelectorAll('.slider')[0]
   const z = document.querySelectorAll('cir')
-
   x.classList.toggle('slideani')
   y.classList.toggle('slideani1')
 
 
 }
-
-
-
-
 
 
 
