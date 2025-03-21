@@ -332,7 +332,7 @@ form {
 
 .profilecircle {
     position: absolute;
-    left: -19.5%;
+    left: -20.5%;
     top: 5.5%;
     width: 330px;
     height: 320px;
@@ -343,9 +343,9 @@ form {
     border-radius: 50%;
     z-index: 30;
     filter: saturate(1.2);
-    background-image: url(k.jpg);
-    background-size: 70%;
-    background-position: center;
+    background-image: url(kk.jpg);
+    background-size: cover;
+    background-position: top;
     filter: brightness(1.1) saturate(1.4);
     background-repeat: no-repeat;
 }
