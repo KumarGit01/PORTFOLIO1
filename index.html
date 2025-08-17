@@ -44,7 +44,9 @@
             </a>
 
         </div>
-
+        <div class="close-slider" onclick="closeSlider()">
+            <i class="uil uil-times"></i>
+        </div>
     </DIV>
 
     <div class="container">
@@ -75,7 +77,10 @@
                 </ul>
             </div>
             <div class="nav-button">
-                <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                <!-- <button class="btn">Download CV <i class="uil uil-file-alt"></i></button> -->
+                <button class="btn" onclick="window.open('assets/kumar_resume.pdf', '_blank')">
+                    Download CV <i class="uil uil-file-alt"></i>
+                </button>
             </div>
             <div class="nav-menu-btn">
                 <i class="uil uil-bars" onclick="myMenuFunction()"></i>
@@ -95,21 +100,41 @@
                         <p>I'm <span class="typedText"></span></p>
                     </div>
                     <div class="featured-text-info">
-                        <p>Experienced frontend developer with a passion for creating visually stunning
-                            and user-friendly websites.
+                        <p>
+                            Turning ideas into impactful digital products — experienced in crafting seamless
+                            backends, dynamic frontends, and innovative AI-driven solutions.
                         </p>
+
                     </div>
                     <div class="featured-text-btn">
-                        <button class="btn blue-btn">Hire Me</button>
-                        <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                        <!-- <button class="btn blue-btn">Hire Me</button> -->
+
+                        <button class="btn blue-btn" onclick="window.open(
+                          'https://mail.google.com/mail/?view=cm&fs=1&to=kumar.raj.fullstack@gmail.com&su=Collaboration%20with%20a%20Full%20Stack%20Developer&body=Hi%20Kumar,%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20was%20impressed%20by%20your%20expertise%20in%20Full%20Stack%20Development%20and%20Blockchain.%0D%0A%0D%0AI%20would%20love%20to%20discuss%20a%20project%20or%20career%20opportunity%20with%20you.%0D%0A%0D%0ALooking%20forward%20to%20your%20response.%0D%0A%0D%0ABest%20Regards,%0D%0A[Your%20Name]',
+                          '_blank'
+                        )">
+                            Hire Me
+                        </button>
+
+
+
+                        <button class="btn" onclick="window.open('assets/kumar_resume.pdf', '_blank')">
+                            Download CV <i class="uil uil-file-alt"></i>
+                        </button>
                     </div>
                     <div class="social_icons">
                         <div class="icon"><i class="uil uil-instagram"></i></div>
-                        <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                        <div class="icon">
+                            <a href="https://www.linkedin.com/in/kumaractive/">
+                                <i class="uil uil-linkedin-alt" style="color: #0077b5;"></i>
+                            </a>
+                        </div>
                         <div class="icon"><i class="uil uil-twitter"></i></div>
-                        <a href="https://github.com/KumarGit01">
-                            <div class="icon"><i class="uil uil-github-alt"></i></div>
-                        </a>
+                        <div class="icon">
+                            <a href="https://github.com/KumarGit01">
+                                <div class="icon"><i class="uil uil-github-alt" style="color: #000000;"></i></div>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="featured-image">
@@ -148,13 +173,19 @@
                     <div class="col">
                         <div class="about-info">
                             <h3>My introduction</h3>
-                            <p>I am well-versed in HTML, CSS and JavaScript , and other cutting edge
-                                frameworks and libraries,which allows me to implement interactive features.
-                                Additionally, I have experirence working with content management systems (CMS) like
-                                WordPress.
+                            <p>I’m a Full Stack Developer skilled in crafting responsive, user-friendly applications
+                                using HTML, CSS, JavaScript, and
+                                modern frameworks like React.js and Next.js. On the backend, I work with Node.js, Go,
+                                and scalable databases to build
+                                secure, high-performance systems. I also bring experience with WordPress and CMS
+                                platforms, making me adaptable across
+                                both custom and content-driven solutions. Passionate about clean code, scalability, and
+                                delivering products that truly
+                                create impact.
                             </p>
                             <div class="about-btn">
-                                <button class="btn">Download CV <i class="uil uil-import"></i></button>
+                                <button class="btn" onclick="window.open('assets/kumar_resume.pdf', '_blank')">
+                                    Download CV <i class="uil uil-import"></i></button>
                             </div>
                         </div>
                     </div>
@@ -168,9 +199,8 @@
                                 <span>CSS</span>
                                 <span>Bootstrap</span>
                                 <span>JavaScript</span>
-                                <span>Vue</span>
                                 <span>React</span>
-                                <span>Angular</span>
+                                <span>Next.js</span>
                             </div>
                         </div>
                         <div class="skills-box">
@@ -179,10 +209,18 @@
                             </div>
                             <div class="skills-list">
                                 <span>NODE JS</span>
-                                <span>PHP</span>
-                                <span>JAVA</span>
-                                <span>Python</span>
-                                <span>C++</span>
+                                <span>GO</span>
+                                <span>Express</span>
+                                <span>REST APIs</span>
+                                <span>GraphQL</span>
+                                <span>Docker</span>
+                                <span>AWS</span>
+                                <span>GCP</span>
+                                <span>Azure</span>
+                                <span>Kubernetes</span>
+                                <span>CI/CD</span>
+                                <span>DevOps</span>
+                                <span>Git</span>
                             </div>
                         </div>
                         <div class="skills-box">
@@ -190,9 +228,10 @@
                                 <h3>Database</h3>
                             </div>
                             <div class="skills-list">
+                                <span>MongoDB</span>
                                 <span>MySQL</span>
                                 <span>PostgreSQL</span>
-                                <span>MongoDB</span>
+                                <span>Firebase</span>
                             </div>
                         </div>
                     </div>
@@ -271,7 +310,7 @@
                     <div class="col">
                         <div class="contact-info">
                             <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                            <p><i class="uil uil-envelope"></i> Email: kumarraj.active@gmail.com</p>
+                            <p><i class="uil uil-envelope"></i> Email: kumar.raj.fullstack@gmail.com</p>
                             <p><i class="uil uil-phone"></i> +91 9731213064</p>
                         </div>
                     </div>
@@ -326,9 +365,17 @@
             </div>
             <div class="footer-social-icons">
                 <div class="icon"><i class="uil uil-instagram"></i></div>
-                <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/kumaractive/">
+                        <i class="uil uil-linkedin-alt" style="color: #0077b5;"></i>
+                    </a>
+                </div>
                 <div class="icon"><i class="uil uil-twitter"></i></div>
-                <div class="icon"><i class="uil uil-github-alt"></i></div>
+                <div class="icon">
+                    <a href="https://github.com/KumarGit01">
+                        <div class="icon"><i class="uil uil-github-alt" style="color: #000000;"></i></div>
+                    </a>
+                </div>
             </div>
             <div class="bottom-footer">
                 <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Kumar Raj</a> - All rights reserved
