@@ -77,7 +77,7 @@ let typingEffect = new Typed(".typedText", {
     "Backend Engineer",
     "Frontend Creator",
     "AI Innovator",
-    "Hackathon Innovator",
+    "Hackathon Hacker",
     "Cloud Explorer"
   ],
   loop: true,

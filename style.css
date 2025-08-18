@@ -96,8 +96,18 @@ form {
     left: 25%;
     cursor: pointer;
     font-size: 15px;
-    background-color: var(--first-color);
+    background-color: rgb(68, 68, 68);
     color: #ffffff;
+    transition: background 0.3s ease-in-out;
+    border: 0px;
+}
+
+.bb:hover {
+    background-color: rgb(110, 87, 224);
+}
+
+.bb1:hover {
+    background-color: rgb(110, 87, 224);
 }
 
 .bb i {
@@ -111,6 +121,7 @@ form {
 }
 
 .bb1 {
+    border: 0px;
     padding: 10px 20px;
     border-radius: 10px;
     position: absolute;
@@ -118,8 +129,9 @@ form {
     left: 54%;
     cursor: pointer;
     font-size: 15px;
-    background-color: var(--first-color);
+    background-color: rgb(68, 68, 68);
     color: #ffffff;
+    transition: background 0.3s ease-in-out;
 }
 
 
@@ -129,8 +141,9 @@ form {
     top: 0%;
     width: 500px;
     height: 270px;
-    border-top: 4px solid rgba(255, 0, 0, 0.881);
-    border-bottom: 4px solid rgba(255, 0, 0, 0.881);
+    background-color: rgb(68, 68, 68);
+    border-top: 4px solid rgb(68, 68, 68);
+    border-bottom: 4px solid rgb(68, 68, 68);
     overflow: hidden;
     cursor: pointer;
     background-color: white;
@@ -167,10 +180,11 @@ form {
     }
 }
 
+/* 
 .slideani2 {
     display: none;
 }
-
+*/
 .slider1 {
     position: fixed;
     top: 0%;
@@ -220,6 +234,75 @@ form {
     border-radius: 50%;
     transition: all .5s ease-in-out;
 }
+
+/* .slider1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    transition: opacity 0.4s ease-in-out;
+} */
+/* 
+.slider {
+    position: fixed;
+    top: 50%;
+    left: -110%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 650px;
+    height: 420px;
+    background: #fff;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    transition: left 0.8s ease-in-out;
+    overflow: hidden;
+} */
+
+/* Slide active */
+.slider.show {
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider1.show {
+    display: block;
+    opacity: 1;
+}
+
+/* Close Button */
+.close-slider {
+    position: absolute;
+    top: 106px;
+    right: 92px;
+    width: 35px;
+    height: 35px;
+    background: rgb(68, 68, 68);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.close-slider i {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.close-slider:hover {
+    font-weight: bold;
+    font-size: larger;
+    background: #d62828;
+    transform: rotate(90deg);
+}
+
 
 .project-box i {
     font-size: 40px;
@@ -666,11 +749,88 @@ nav {
     border-radius: 50%;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer;
+    transition: 0.3s;
 }
 
-.icon:hover {
-    color: var(--first-color);
+.icon i {
+    font-size: 20px;
+    transition: 0.3s;
+    color: #000;
 }
+
+/* Hover effects */
+.icon:hover {
+    transform: scale(1.1);
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); */
+}
+
+.icon-linkedin:hover i {
+    color: #0A66C2;
+}
+
+.icon-twitter:hover i {
+    color: #1DA1F2;
+}
+
+.icon-github:hover i {
+    color: #171515;
+}
+
+.icon-instagram:hover i {
+    color: #E4405F;
+}
+
+/* .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icon i {
+    font-size: 20px;
+}
+
+.icon-linkedin a {
+    color: #000000;
+}
+
+.icon.icon-instagram .icon-twitter {
+    color: #000000;
+}
+
+.icon-linkedin:hover {
+    color: #0A66C2;
+    transform: scale(1.1);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.icon.icon-twitter:hover {
+    color: #1DA1F2;
+    transform: scale(1.1);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.icon.icon-github:hover {
+    color: #171515;
+    transform: scale(1.1);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.icon.icon-instagram:hover {
+    color: #E4405F;
+    transform: scale(1.1);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+} */
+
+/* .icon:hover {
+    color: var(--first-color);
+} */
 
 /* ----- FEATURED IMAGE BOX ----- */
 .featured-image {
