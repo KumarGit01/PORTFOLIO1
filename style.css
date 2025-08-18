@@ -221,19 +221,54 @@ form {
     transform: translateX(-2%);
 }
 
+
 .cir::after {
     cursor: pointer;
     content: "";
     position: absolute;
     top: 0%;
-    left: 103%;
+    left: 83%;
     z-index: 12;
     width: 40px;
     height: 40px;
     background-color: rgb(68, 68, 68);
+    color: white;
     border-radius: 50%;
     transition: all .5s ease-in-out;
 }
+
+/* .cir {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(68, 68, 68);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+} */
+
+.cir i {
+    color: white;
+    font-size: 18px;
+
+}
+
+.cir::after {
+    content: "\25B6";
+    position: absolute;
+    top: 60%;
+    left: 105%;
+    transform: translateY(-300%);
+    font-size: 20px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
 
 /* .slider1 {
     position: fixed;
