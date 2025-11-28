@@ -506,9 +506,9 @@ form {
 .profilecircle {
     position: absolute;
     left: -20.5%;
-    top: 5.5%;
-    width: 330px;
-    height: 320px;
+    top: 5%;
+    width: 326px;
+    height: 326px;
     border: 2px solid rgba(0, 183, 255, 0);
     border-radius: 50%;
     overflow: hidden;
@@ -516,7 +516,7 @@ form {
     border-radius: 50%;
     z-index: 30;
     filter: saturate(1.2);
-    background-image: url(kk.jpg);
+    background-image: url(d.png);
     background-size: cover;
     background-position: top;
     filter: brightness(1.1) saturate(1.4);
